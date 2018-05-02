@@ -1,0 +1,58 @@
+<html>
+<head> <title>Appointment Chart Form</title>
+ <link rel="stylesheet" href="jquery-ui.css">
+  <script src="jquery-1.12.4.js"></script>
+  <script src="jquery-ui.js"></script>
+  <script>
+  function checkpara()
+  { var d=new String(document.getElementByName('date1').value);
+    
+	if(d.length ==0)
+	 { 
+	 document.getElementById('p2').innerHTML='* Field is Mandatory';
+	 }
+  }
+  </script>
+  <style>
+   form {text-align:cente;}
+   h1{align center;}
+  </style>
+  <script>
+
+  $(function() {
+        $( ".datePicker" ).datepicker({
+          dateFormat: "yy-mm-dd",
+		  changeMonth: true,
+          changeYear: true,
+		  
+        });
+    });
+  </script>
+  <script>
+  function target_popup(form) {
+    window.open('', 'formpopup', 'width=1200,height=800,resizeable,scrollbars,left=60%');
+    form.target = 'formpopup';
+}
+
+function myFunction2(){
+<?php   header('Location: network.php');?>
+}
+  </script>
+ </head>
+ 
+<body onload="location.reset()">
+<h1> Visualize The Appointments made for various Doctors</h1>
+
+<form action="chart.php" method="POST"  onload="document.reset()" onsubmit="target_popup(this)">
+			<div id="form1" onload="">
+			<table align="center">
+			<label for="date1">Date of Appointment</label>
+			 <input  class='datePicker' type="text" id="date1" name="date1"> <p id='p2'></p>
+			<br>
+			<input type="submit" name="submit" value="SUBMIT"></input>
+			</table>
+			<br><br>
+			</div>
+</form>
+</body>
+</html>

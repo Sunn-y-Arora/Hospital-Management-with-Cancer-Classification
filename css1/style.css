@@ -1,0 +1,160 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    filter: sepia(100%);
+}
+
+.sidenav {
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: white;
+    /* Black*/
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    padding-top: 60px;
+    /* Place content 60px from the top */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in the sidenav */
+}
+
+
+/* The navigation menu links */
+
+.sidenav a {
+    margin-bottom: 30px;
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 1.5em;
+    color: #2005CB;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav span {
+    display: block;
+    font-size: .7em;
+    color: lightgrey;
+}
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+
+#main {
+    transition: margin-left .5s;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+.content-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.video-overlay {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAARElEQVQIW2Pkkcj+/+XFVEYukUxjBoa/zxgZGBgYuCWyzoDo/3/++IJlGFkYZzIyMBqDVDJyiaRJgmS/vZn1nEciqx4Aud4UTHim4VgAAAAASUVORK5CYII=) repeat;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -5;
+}
+
+.video-overlay2 {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAMElEQVQIW2NkYGD4z8XF5cvAwNDw7ds3E0YuLi4fEAcqsAUkcAbK2czAwMDIyIAGAFmcDwWl7f/wAAAAAElFTkSuQmCC) repeat;
+    background-color: black;
+    opacity: .5;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -5;
+}
+
+.title-logo {
+    text-align: center;
+}
+
+.header {
+    width: 15vh;
+    background-color: transparent;
+    color: white;
+    z-index: 5;
+    margin: 0;
+}
+
+.hamburger {
+    margin: 50px;
+}
+
+.title-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+}
+
+.title-text {
+    z-index: 1;
+    color: white;
+    font-family: inherit;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 5em;
+    display: inline-block;
+}
+
+.title-text2 {
+    text-align: center;
+    color: white;
+    font-weight: 200;
+    font-size: 3em;
+    margin: 0;
+    top: 0;
+}
+
+.title-img {
+    display: inline-block;
+    height: 16vh;
+    margin-left: 30px;
+    padding: 40px;
+}
