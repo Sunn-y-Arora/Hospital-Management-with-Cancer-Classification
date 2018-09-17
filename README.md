@@ -7,7 +7,7 @@ To run the project.
           i.)   Apache Server
           ii.)  PHP MyAdmin
     3. Open my php admin in your web browser
-    4. And execute the test.sql in it.
+    4. Create a database named "hms" And execute the test.sql in it.
     5. All the tables should be created automatically.
     6.Now open localhost/[your project folder name]/main.html   to run the browser.
  
